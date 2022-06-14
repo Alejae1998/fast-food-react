@@ -6,6 +6,7 @@ export default function OrderDisplay({ drink, side, meal, OrderName, instruction
       <section>
         <img src={`${drink}.jpeg`} />
         <img src={`burger-${meal}.jpeg`} />
+        <img src={`hotdog${meal}.jpeg`} />
         <img src={`${side}.jpeg`} />
         <h3>Name for order: {OrderName}</h3>
         <div>

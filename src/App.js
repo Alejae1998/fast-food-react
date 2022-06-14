@@ -5,6 +5,7 @@ import SideDropdown from './SideDropdown';
 import MealDropdown from './MealDropdown';
 import OrderDisplay from './OrderDisplay';
 import OrderNameInput from './OrderNameInput';
+import InstructionForm from './InstructionForm';
 
 function App() {
   const [drink, setDrink] = useState('tropical');
@@ -32,7 +33,7 @@ function App() {
         </div>
         <section>
           <div className="bottom">
-            <instructionForm
+            <InstructionForm
               handleSubmit={handleSubmit}
               setInstructionForm={setInstructionForm}
               instructionForm={instructionForm}
