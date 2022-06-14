@@ -9,7 +9,6 @@ export default function MealDropdown({ setMeal }) {
         <option value="2">Epic Veggie Burger</option>
         <option value="3">Rock N Bacon</option>
         <option value="4">The Power Burger</option>
-        <option value="hotdog">The Doggie</option>
       </select>
     </label>
   );

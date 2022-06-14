@@ -37,7 +37,31 @@
   }
 }
 
+body {
+  background-image: url(./background.jpeg);
+  z-index: -1;
+}
 img {
-  width: 100px;
-  
+  display: flex;
+  width: 33.33%;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.column {
+  display: flex;
+  width: 33.33%;
+  margin-top: 200px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.column::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.adds {
+  display: inline;
+  font-family: 'Courier New', Courier, monospace;
 }

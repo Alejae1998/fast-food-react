@@ -3,14 +3,13 @@ import react from 'react';
 export default function OrderDisplay({ drink, side, meal, OrderName, instructions }) {
   return (
     <div>
-      <section>
+      <section className='column'>
         <img src={`${drink}.jpeg`} />
         <img src={`burger-${meal}.jpeg`} />
-        <img src={`hotdog${meal}.jpeg`} />
         <img src={`${side}.jpeg`} />
-        <h3>Name for order: {OrderName}</h3>
+        <h3 className='adds'>Name for order: {OrderName}</h3>
         <div>
-          <h3>Special instructions</h3>
+          <h3 className='adds'>Special instructions</h3>
           <ul>
             {
               instructions.map((instruction, i) => <li key={instruction + i}>{instruction}</li>)
