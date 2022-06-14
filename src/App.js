@@ -23,23 +23,24 @@ function App() {
   return (
     <div className="App">
       <h1 className="title">Welcome to Burger Beats FastFood!</h1>
+      <div className="middle">
+        <OrderNameInput setOrderName={setOrderName} />
+        <h2>Order for {orderName}</h2>
+      </div>
       <section>Select Order Details!</section>
-      <section className="dropdowns">
+      <section className="dropdown">
         <DrinkDropdown setDrink={setDrink} />
         <MealDropdown setMeal={setMeal} />
         <SideDropdown setSide={setSide} />
-        <div className="middle">
-          <OrderNameInput setOrderName={setOrderName} />
+      </section>
+      <section>
+        <div className="bottom">
+          <InstructionForm
+            handleSubmit={handleSubmit}
+            setInstructionForm={setInstructionForm}
+            instructionForm={instructionForm}
+          />
         </div>
-        <section>
-          <div className="bottom">
-            <InstructionForm
-              handleSubmit={handleSubmit}
-              setInstructionForm={setInstructionForm}
-              instructionForm={instructionForm}
-            />
-          </div>
-        </section>
       </section>
       <div className="display">
         <OrderDisplay
